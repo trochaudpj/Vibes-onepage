@@ -1,0 +1,434 @@
+*{
+    box-sizing: border-box;    
+}
+body {
+    margin: 0;
+    transition: background-color 3s, color 3s;
+    background: rgb(132,246,166);
+    background: linear-gradient(126deg, rgba(132,246,166,1) 0%, rgba(74,238,245,1) 35%, rgba(217,119,255,1) 100%); }
+body.darkMode{
+    background: rgb(41,75,51);
+    background: linear-gradient(230deg, rgba(41,75,51,1) 0%, rgba(31,96,99,1) 35%, rgba(79,44,93,1) 100%); }
+.wrapper{
+    padding: 5em;
+    padding-top: 0%;
+}
+h1, h2, h3{
+    font-family: 'Anton', sans-serif;
+}
+p{
+    font-family: 'Arimo', sans-serif;
+}
+em{
+    font-family: 'Arimo', sans-serif;
+}
+.h1U::after{
+    display: block;
+    content: "";
+    width: 2em;
+    margin: auto;
+    height: 3px;
+    transition:  background-color 3s;
+    background-color: rgb(117, 48, 207);
+    margin-top: 10px;    
+}
+.h3U::after{
+    display: block;
+    content: "";
+    width: 2em;
+    margin: 0.25em 0.0em;
+    height: 3px;
+    transition: background-color 3s;
+    background-color: rgb(117, 48, 207);
+    margin-top: 10px; 
+}
+/* Style the buttons */
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 10%;
+    z-index: 99;
+    font-size: 18px;
+    border: 2px;
+    outline: solid;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+#myBTN:hover {
+    color: rgb(36, 62, 179);
+}
+.btn {
+    width: fit-content;
+    border: 2px;
+    outline: solid;
+    padding: 12px 16px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.banniere .btn:hover{
+    background-color:white;
+    border-color: black ;
+    color: black;
+}
+#buy .buy-body .btn{
+    color: white;
+    background-color: transparent;
+    border-color: rgb(117, 48, 207);
+}
+.btn:hover {
+   background-color: coral;
+}
+
+.btn.active {  
+    color: coral;
+}
+.icon{
+    transition:  color 3s;
+    color: rgb(117, 48, 207);
+}
+body.darkMode .icon{
+    color: rgb(211, 25, 149);
+}
+.txtC1{
+    transition:  color 3s;
+    color: black;
+    background-color: white;
+}
+.txtC2{
+    transition:  color 3s;
+    color: white;
+    background-color: black;
+}
+body.darkMode .txtC2{
+    color: black;
+    background-color: white;
+}
+body.darkMode .txtC1{
+    color: white;
+    background-color: black;
+}
+.fab{
+   
+    line-height:1;
+}
+.fa-ul > li {
+     padding-left: 1em;
+    line-height: 1;
+}
+
+body.darkMode .h1U::after{ 
+    background: rgb(211, 25, 149);    
+}
+body.darkMode .h3U::after{
+    background: rgb(211, 25, 149);
+}
+#testimonial{
+    padding-bottom: 2em;
+    border-top: 1px gray solid;
+}
+.testimonial-body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.revue{  display: inline-flex;
+    margin: 1em;
+    padding: 1em;
+    border-bottom: 2px solid lightgray;
+}
+.revue.bis{ 
+    flex-direction:row;
+    text-align: right;
+}
+.message-body{
+       margin-left: 1em;
+    margin-right: 1em; 
+}
+.message p::first-letter {
+    color: rgb(117, 48, 207);
+    font-weight: bold;
+    font-size: 150%;
+}  
+body.darkMode .message p::first-letter {
+color: rgb(211, 25, 149);
+}
+.portrait{
+    width:40%;
+    min-width: 75px;
+    max-width: 100px;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-clip: content-box;
+    border:2px solid #fff;
+        border-radius: 37%;
+    box-shadow: 0px 6px 10px #ccc;
+}
+#darkModeBtn{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    color: #fff;
+    font-size: 1em;
+    background-color:transparent;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px;
+    outline: solid;
+    cursor: pointer;
+    border-radius: 4px;
+}
+body.darkMode #darkModeBtn{
+    color: rgb(255, 245, 109);
+}
+header{
+    background-color: rgba(0, 0, 0);
+    position: sticky;
+    top: -80px;
+    z-index: 1;
+}
+#menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+header:hover{
+    top: 0;
+}
+#menu-links a{
+    color: #fff;
+    margin-left: 0.5em;
+    display: inline-block;
+    text-decoration: none;
+}
+#burger{
+    color: #fff;
+    text-decoration: none;
+    display: none;
+    padding: 0.3em 0.4em;
+    border: 1px solid #fff;
+}
+.side-spaced{
+    padding: 1em 3em;
+}
+#banniere{
+   color: linen;  
+}
+.banniere{
+background-image:url("https://i.pinimg.com/564x/81/b1/9f/81b19f46cff181c3a810c52f6cbba0b3.jpg");
+background-size: cover;
+filter: grayscale(65%);
+z-index: 0;
+margin-left: auto;
+margin-right: auto;
+padding: 10% 20% 10% 20%;
+text-align: center;
+}
+.title{
+    justify-content:center ;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    font-size: 18px; 
+}
+.banniere .title{
+    padding: 10px;
+    font-size: 18px;
+    z-index: 1;
+}
+section{
+    border-bottom: 2px blue;
+}
+.banniere .p{
+    font-size: 12px;
+    z-index: 1;
+}
+#presentation{
+    
+    display: grid;
+    grid-template-columns: 2fr 2fr 3fr;
+    padding-left: 2em;
+    border-bottom: 1px gray solid;
+
+}
+#gallery-images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: row de;
+    overflow: hidden;
+}
+#gallery-images figure{
+    margin: 0;
+    height: 150px;
+    position: relative;
+    transition: transform 1s, opacity 1s;
+}
+#gallery-images figure img{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+#gallery-images figure:hover img{
+    opacity: 0.7;
+}
+#gallery-images figure:hover .middle{
+    opacity: 1;
+}
+.text {
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+
+.middle {
+    transition: .5s ease;
+    opacity: 0.2;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+#gallery-images figure.hidden{
+    transition-timing-function: ease-out;
+    transition: 2s;
+    transform: rotate3d(1,0,0,540deg);
+    opacity: 0;
+    
+}
+#gallery-images figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#gallery-menu{
+    display: flex;
+    justify-content: space-between;
+}
+#gallery-menu .btn{
+  margin-right: 0;
+}
+
+#gallery-filters a{
+    display: inline-block;
+    margin-right: 0.5em;
+    transition:  color 3s;
+    color: black;
+    text-decoration: none;
+}
+body.darkMode #gallery-filters a{
+    display: inline-block;
+    margin-right: 0.5em;
+   color:white;
+    text-decoration: none;
+}
+#gallery-filters a.active{
+    transition:  color 3s;
+    color:  rgb(211, 25, 149);
+    font-weight: bold;
+}
+body.darkMode #gallery-filters a.active{
+    color: rgb(117, 48, 207);
+    font-weight: bold;
+}
+#footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr;
+    padding-left: 2em;
+}
+@keyframes starNight {
+    from {background-position: 0 0;}
+    to {background-position: 100% 0;}
+}
+#buy{
+    
+    background:  black url(../img/NicePng_star-png-transparent_719385.png);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: starNight 20s linear infinite ;
+    justify-content:center ;
+    text-align: center;
+    padding: 10% 20% 10% 20%;
+    color: white; 
+}
+@media screen and (max-width: 800px){
+    #burger{
+        display: block;
+    }
+    
+    #menu-links{
+        transform: scaleY(0);
+        transform-origin: top;
+        overflow: hidden;
+        width: 100%;
+        background-color: #000;
+        text-align: right;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        z-index: 0;
+        transition: line-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+        line-height: 0;
+        padding: 0 1em;
+        opacity: 0;
+    }
+    #menu-links.slideDown{
+        transform: scaleY(1);
+        line-height: 1.5;
+        opacity: 1;
+    }
+    #menu-links a{
+        display: block;
+        margin: 0.5em 0 0.5em 0.5em;
+    }
+    #presentation{
+       
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: 1fr;
+        padding-left: 2em;
+
+    }
+    #gallery-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .side-spaced{
+        padding: 1em;
+    }
+    .revue{  display: inline-flex;
+        flex-direction: column;
+        margin: 1em;
+        padding: 1em;
+        border-bottom: 2px solid lightgray;
+     
+    }
+    .revue.bis{
+        text-align: left    ;
+        flex-direction:column-reverse;
+        
+    }
+    .wrapper{
+        padding: 0em;
+        padding-top: 0%;
+    }
+}
+@media screen and (max-width: 400px){
+    #gallery-images{
+        grid-template-columns:  1fr;
+    }
+
+
+}

@@ -1,0 +1,33 @@
+.accordion-part{
+    border: 1px solid #888;
+    padding: 0 2.5em;
+    margin-bottom: 1em;
+    transition: color 2s;
+}
+.accordion-part .acc-title{
+    position: relative;
+    cursor: pointer;
+}
+.accordion-part .icon{
+    color: rgb(240,75,104);
+    position: absolute;
+    top: 0;
+    left: -1.5em;
+}
+
+.accordion-part .icon{
+    color: rgb(117, 48, 207);
+}
+.accordion-part .icon:before{content: "\f067";}
+.accordion-part.open .icon:before{content: "\f068";}
+.accordion-part .acc-text{
+    display: block;
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    transition: height 0.5s ease-out, margin 0.5s ease-out;
+}
+.accordion-part.open .acc-text{
+    margin: 1em 0;
+    height: auto;
+}
